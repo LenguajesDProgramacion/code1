@@ -54,7 +54,7 @@ public class Estudiante extends Persona {
         String detalle = "";
         for (Materia materia: materias) {
             if (materia.getKey().equals(key)){
-                detalle = materia.getKey()+"\n"+materia.getNombre()+"\n"+materia.getNota();
+                detalle = materia.getKey()+"\n"+materia.getNombre()+"\n"+materia.getNota()+"\n"+materia.getNotamin();
                 break;
             }
         }
