@@ -1,11 +1,13 @@
+package Practica2;
+
 public class Persona {
     private String nombre;
-    private int cedula ;
+    private String apellido;
     private int edad;
 
-    public Persona(String nombre, int cedula, int edad) {
+    public Persona(String nombre, String apellido, int edad) {
         this.nombre = nombre;
-        this.cedula = cedula;
+        this.apellido = apellido;
         this.edad = edad;
     }
 
@@ -17,12 +19,12 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public int getCedula() {
-        return cedula;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public int getEdad() {
@@ -31,12 +33,5 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
-    }
-
-    public boolean esMayorEdad(){
-        boolean pass = false;
-        if (this.edad>=20)
-            pass = true;
-        return pass;
     }
 }
